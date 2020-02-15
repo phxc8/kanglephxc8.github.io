@@ -4,4 +4,3 @@ name = MariaDB
 baseurl = https://mirrors.aliyun.com/mariadb/yum/5.5/centos6-amd64/
 gpgkey=https://mirrors.aliyun.com/mariadb/yum/RPM-GPG-KEY-MariaDB
 gpgcheck=1
-echo -e 'nameserver 114.114.114.114\nnameserver 8.8.8.8\nnameserver 8.8.4.4' > /etc/resolv.conf
