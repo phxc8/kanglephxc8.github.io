@@ -1,0 +1,6 @@
+# http://mariadb.org/mariadb/repositories/ 
+[mariadb]
+name = MariaDB
+baseurl = https://mirrors.aliyun.com/mariadb/yum/5.5/centos6-amd64/
+gpgkey=https://mirrors.aliyun.com/mariadb/yum/RPM-GPG-KEY-MariaDB
+gpgcheck=1
