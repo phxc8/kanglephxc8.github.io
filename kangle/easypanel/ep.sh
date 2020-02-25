@@ -232,6 +232,10 @@ function setup_easypanel
 	/vhs/kangle/bin/kangle -q
 	killall php-cgi
 	\cp -a easypanel-$EASYPANEL_VERSION-$SYS/* /vhs/kangle/
+	rm -rf /vhs/kangle/nodewww/webftp/framework/runtime.php
+	wget -q https://kangle.phxc8.com/source/bugpatch/cron.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/cron.api.php
+	rm -rf /vhs/kangle/nodewww/webftp/framework/runtime.php
+	wget -q https://kangle.phxc8.com/source/bugpatch/runtime.php2 -O /vhs/kangle/nodewww/webftp/framework/runtime.php
 	/vhs/kangle/bin/kangle
 	if [ $? != 0 ] ; then
        		 exit $?
