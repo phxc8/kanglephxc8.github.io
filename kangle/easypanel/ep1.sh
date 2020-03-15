@@ -388,47 +388,47 @@ if [ ! -f /etc/php.d/ioncube.ini ] ; then
 fi
 wget  http://localhost:3312/upgrade.php -O /dev/null -q
 rm -rf /vhs/kangle/www/index.html
-wget https://github.kangle.icu/easypanel/index.html -O /vhs/kangle/www/index.html
+wget https://github.phxc8.com/easypanel/index.html -O /vhs/kangle/www/index.html
 rm -rf /vhs/kangle/nodewww/webftp/vhost/view/default/kfinfo.html
-wget https://github.kangle.icu/easypanel/kfinfo.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/kfinfo.html
+wget https://github.phxc8.com/easypanel/kfinfo.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/kfinfo.html
 rm -rf /vhs/kangle/nodewww/dbadmin/mysql/main.php
-wget https://github.kangle.icu/easypanel/main.php -O /vhs/kangle/nodewww/dbadmin/mysql/main.php
+wget https://github.phxc8.com/easypanel/main.php -O /vhs/kangle/nodewww/dbadmin/mysql/main.php
 rm -rf /vhs/kangle/nodewww/webftp/admin/view/default/common/product.html
-wget https://github.kangle.icu/easypanel/product.html -O /vhs/kangle/nodewww/webftp/admin/view/default/common/product.html
+wget https://github.phxc8.com/easypanel/product.html -O /vhs/kangle/nodewww/webftp/admin/view/default/common/product.html
 rm -rf /vhs/kangle/ext/webalizer.xml
-wget https://github.kangle.icu/easypanel/log_gz.xml -O /vhs/kangle/ext/log_gz.xml
+wget https://github.phxc8.com/easypanel/log_gz.xml -O /vhs/kangle/ext/log_gz.xml
 rm -rf /vhs/kangle/nodewww/webftp/vhost/view/default/top.html
-wget https://github.kangle.icu/easypanel/top.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/top.html
+wget https://github.phxc8.com/easypanel/top.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/top.html
 rm -rf /vhs/kangle/nodewww/webftp/vhost/view/default/cacheclean/cachecleanfrom.html
-wget https://github.kangle.icu/easypanel/cachecleanfrom.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/cacheclean/cachecleanfrom.html
+wget https://github.phxc8.com/easypanel/cachecleanfrom.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/cacheclean/cachecleanfrom.html
 rm -rf /vhs/kangle/nodewww/webftp/admin/view/default/nodes/addnode.html
-wget https://github.kangle.icu/easypanel/addnode.html -O /vhs/kangle/nodewww/webftp/admin/view/default/nodes/addnode.html
+wget https://github.phxc8.com/easypanel/addnode.html -O /vhs/kangle/nodewww/webftp/admin/view/default/nodes/addnode.html
 rm -rf /vhs/kangle/nodewww/webftp/admin/view/default/scripts/func.js
-wget https://github.kangle.icu/easypanel/func.js -O /vhs/kangle/nodewww/webftp/admin/view/default/scripts/func.js
+wget https://github.phxc8.com/easypanel/func.js -O /vhs/kangle/nodewww/webftp/admin/view/default/scripts/func.js
 rm -rf /vhs/kangle/nodewww/webftp/admin/view/default/virtualhost/virtualhost.html
-wget https://github.kangle.icu/easypanel/virtualhost.html -O /vhs/kangle/nodewww/webftp/admin/view/default/virtualhost/virtualhost.html
+wget https://github.phxc8.com/easypanel/virtualhost.html -O /vhs/kangle/nodewww/webftp/admin/view/default/virtualhost/virtualhost.html
 rm -rf /vhs/kangle/nodewww/webftp/admin/cnzz.html
 rm -rf /vhs/kangle/nodewww/webftp/vhost/cnzz.html
-wget https://github.kangle.icu/easypanel/cnzz.html -O /vhs/kangle/nodewww/webftp/admin/cnzz.html
+wget https://github.phxc8.com/easypanel/cnzz.html -O /vhs/kangle/nodewww/webftp/admin/cnzz.html
 \cp -f /vhs/kangle/nodewww/webftp/admin/cnzz.html /vhs/kangle/nodewww/webftp/vhost/cnzz.html
 rm -rf /vhs/kangle/nodewww/webftp/admin/view/default/common/foot.html
-wget https://github.kangle.icu/easypanel/admin/foot.html -O /vhs/kangle/nodewww/webftp/admin/view/default/common/foot.html
+wget https://github.phxc8.com/easypanel/admin/foot.html -O /vhs/kangle/nodewww/webftp/admin/view/default/common/foot.html
 rm -rf /vhs/kangle/nodewww/webftp/admin/view/default/main.html
-wget https://github.kangle.icu/easypanel/admin/main.html -O /vhs/kangle/nodewww/webftp/admin/view/default/main.html
+wget https://github.phxc8.com/easypanel/admin/main.html -O /vhs/kangle/nodewww/webftp/admin/view/default/main.html
 rm -rf /vhs/kangle/nodewww/webftp/admin/view/default/login_error.html
-wget https://github.kangle.icu/easypanel/admin/login_error.html -O /vhs/kangle/nodewww/webftp/admin/view/default/login_error.html
+wget https://github.phxc8.com/easypanel/admin/login_error.html -O /vhs/kangle/nodewww/webftp/admin/view/default/login_error.html
 rm -rf /vhs/kangle/nodewww/webftp/vhost/view/default/common/foot.html
-wget https://github.kangle.icu/easypanel/vhost/foot.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/common/foot.html
+wget https://github.phxc8.com/easypanel/vhost/foot.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/common/foot.html
 rm -rf /vhs/kangle/nodewww/webftp/vhost/view/default/common/head.html
-wget https://github.kangle.icu/easypanel/vhost/head.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/common/head.html
+wget https://github.phxc8.com/easypanel/vhost/head.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/common/head.html
 rm -rf /vhs/kangle/nodewww/webftp/vhost/view/default/login.html
-wget https://github.kangle.icu/easypanel/vhost/login.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/login.html
+wget https://github.phxc8.com/easypanel/vhost/login.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/login.html
 rm -rf /vhs/kangle/nodewww/webftp/vhost/view/default/loginerror.html
-wget https://github.kangle.icu/easypanel/vhost/loginerror.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/loginerror.html
+wget https://github.phxc8.com/easypanel/vhost/loginerror.html -O /vhs/kangle/nodewww/webftp/vhost/view/default/loginerror.html
 rm -rf /vhs/kangle/ext/tpl_php52/php-templete.ini
-wget https://github.kangle.icu/easypanel/php-templete.ini -O /vhs/kangle/ext/tpl_php52/php-templete.ini
+wget https://github.phxc8.com/easypanel/php-templete.ini -O /vhs/kangle/ext/tpl_php52/php-templete.ini
 rm -rf /vhs/kangle/ext/tpl_php52/etc/php-node.ini
-wget https://github.kangle.icu/easypanel/php-node.ini -O /vhs/kangle/ext/tpl_php52/etc/php-node.ini
+wget https://github.phxc8.com/easypanel/php-node.ini -O /vhs/kangle/ext/tpl_php52/etc/php-node.ini
 $PREFIX/bin/kangle -q
 killall -9 kangle
 sleep 3
