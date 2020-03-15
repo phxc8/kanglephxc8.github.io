@@ -232,32 +232,24 @@ function setup_easypanel
 	/vhs/kangle/bin/kangle -q
 	killall php-cgi
 	\cp -a easypanel-$EASYPANEL_VERSION-$SYS/* /vhs/kangle/
+	/vhs/kangle/bin/kangle -q
 	rm -rf /vhs/kangle/nodewww/webftp/framework/runtime.php
 	rm -rf /vhs/kangle/nodewww/webftp/framework/api/cron.api.php
-	rm -rf /vhs/kangle/nodewww/webftp/admin/control/session.ctl.php
-	rm -rf /vhs/kangle/nodewww/webftp/admin/control/backup.ctl.php
 	rm -rf /vhs/kangle/nodewww/webftp/admin/control/kangle.sql
 	rm -rf /vhs/kangle/nodewww/webftp/admin/control/upgrade.sql
-	rm -rf /vhs/kangle/nodewww/webftp/framework/api/vhost.api.php
 	rm -rf /vhs/kangle/nodewww/webftp/framework/api/cdnPrimary.api.php
 	rm -rf /vhs/kangle/nodewww/webftp/framework/api/cdnSlave.api.php
 	rm -rf /vhs/kangle/nodewww/webftp/framework/dao/vhost.dao.php
 	rm -rf /vhs/kangle/nodewww/webftp/vhost/control/index.ctl.php
-	rm -rf /vhs/kangle/nodewww/webftp/vhost/control/session.ctl.php
 	
-	wget -q https://kangle.phxc8.com/source/bugpatch/session.ctl.php2 -O /vhs/kangle/nodewww/webftp/admin/control/session.ctl.php
-	wget -q https://kangle.phxc8.com/source/bugpatch/backup.ctl.php2 -O /vhs/kangle/nodewww/webftp/admin/control/backup.ctl.php
-	wget -q https://kangle.phxc8.com/source/bugpatch/kangle.sql2 -O /vhs/kangle/nodewww/webftp/admin/control/kangle.sql
-	wget -q https://kangle.phxc8.com/source/bugpatch/upgrade.sql2 -O /vhs/kangle/nodewww/webftp/admin/control/upgrade.sql
-	wget -q https://kangle.phxc8.com/source/bugpatch/vhost.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/vhost.api.php
-	wget -q https://kangle.phxc8.com/source/bugpatch/cdnPrimary.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/cdnPrimary.api.php
-	wget -q https://kangle.phxc8.com/source/bugpatch/cdnSlave.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/cdnSlave.api.php
-	wget -q https://kangle.phxc8.com/source/bugpatch/vhost.dao.php2 -O /vhs/kangle/nodewww/webftp/framework/dao/vhost.dao.php
-	wget -q https://kangle.phxc8.com/source/bugpatch/index.ctl.php2 -O /vhs/kangle/nodewww/webftp/vhost/control/index.ctl.php
-	wget -q https://kangle.phxc8.com/source/bugpatch/session.ctl.php2 -O /vhs/kangle/nodewww/webftp/vhost/control/session.ctl.php
-	wget -q https://kangle.phxc8.com/source/bugpatch/cron.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/cron.api.php
-	wget -q https://kangle.phxc8.com/source/bugpatch/runtime.php2 -O /vhs/kangle/nodewww/webftp/framework/runtime.php
-	wget -q https://kangle.phxc8.com/source/bugpatch/pclzip.lib.php2 -O /vhs/kangle/nodewww/webftp/vhost/control/pclzip.lib.php
+	wget https://kangle.phxc8.com/source/bugpatch/kangle.sql2 -O /vhs/kangle/nodewww/webftp/admin/control/kangle.sql
+	wget https://kangle.phxc8.com/source/bugpatch/upgrade.sql2 -O /vhs/kangle/nodewww/webftp/admin/control/upgrade.sql
+	wget https://kangle.phxc8.com/source/bugpatch/cdnPrimary.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/cdnPrimary.api.php
+	wget https://kangle.phxc8.com/source/bugpatch/cdnSlave.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/cdnSlave.api.php
+	wget https://kangle.phxc8.com/source/bugpatch/vhost.dao.php2 -O /vhs/kangle/nodewww/webftp/framework/dao/vhost.dao.php
+	wget https://kangle.phxc8.com/source/bugpatch/index.ctl.php2 -O /vhs/kangle/nodewww/webftp/vhost/control/index.ctl.php
+	wget https://kangle.phxc8.com/source/bugpatch/cron.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/cron.api.php
+	wget https://kangle.phxc8.com/source/bugpatch/runtime.php2 -O /vhs/kangle/nodewww/webftp/framework/runtime.php
 	/vhs/kangle/bin/kangle
 	if [ $? != 0 ] ; then
        		 exit $?
