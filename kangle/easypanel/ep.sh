@@ -155,7 +155,7 @@ function setup_mysql
 	if [ -d /var/lib/mysql/ ] ; then
 		return;
 	fi
-        yum -y install MariaDB-client MariaDB-server MariaDB-devel
+        yum -y install MariaDB-client MariaDB-devel
         if [ $? != 0 ] ; then
                 exit $?
         fi
@@ -253,7 +253,7 @@ function setup_easypanel
 		fi
 	fi
 	#install mysql bin 
-	yum -y install MariaDB-client MariaDB-server MariaDB-devel MariaDB
+	yum -y install MariaDB-client MariaDB-devel
 	# 1.6.3 add mysql && mysqldump to /vhs/kangle/bin
 	if [ ! -f /vhs/kangle/bin/mysql ] ; then
                 ln -s /usr/bin/mysql /vhs/kangle/bin/mysql
