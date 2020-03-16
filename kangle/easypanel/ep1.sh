@@ -233,23 +233,6 @@ function setup_easypanel
 	killall php-cgi
 	\cp -a easypanel-$EASYPANEL_VERSION-$SYS/* /vhs/kangle/
 	/vhs/kangle/bin/kangle -q
-	rm -rf /vhs/kangle/nodewww/webftp/framework/runtime.php
-	rm -rf /vhs/kangle/nodewww/webftp/framework/api/cron.api.php
-	rm -rf /vhs/kangle/nodewww/webftp/admin/control/kangle.sql
-	rm -rf /vhs/kangle/nodewww/webftp/admin/control/upgrade.sql
-	rm -rf /vhs/kangle/nodewww/webftp/framework/api/cdnPrimary.api.php
-	rm -rf /vhs/kangle/nodewww/webftp/framework/api/cdnSlave.api.php
-	rm -rf /vhs/kangle/nodewww/webftp/framework/dao/vhost.dao.php
-	rm -rf /vhs/kangle/nodewww/webftp/vhost/control/index.ctl.php
-	
-	wget https://kangle.phxc8.com/source/bugpatch/kangle.sql2 -O /vhs/kangle/nodewww/webftp/admin/control/kangle.sql
-	wget https://kangle.phxc8.com/source/bugpatch/upgrade.sql2 -O /vhs/kangle/nodewww/webftp/admin/control/upgrade.sql
-	wget https://kangle.phxc8.com/source/bugpatch/cdnPrimary.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/cdnPrimary.api.php
-	wget https://kangle.phxc8.com/source/bugpatch/cdnSlave.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/cdnSlave.api.php
-	wget https://kangle.phxc8.com/source/bugpatch/vhost.dao.php2 -O /vhs/kangle/nodewww/webftp/framework/dao/vhost.dao.php
-	wget https://kangle.phxc8.com/source/bugpatch/index.ctl.php2 -O /vhs/kangle/nodewww/webftp/vhost/control/index.ctl.php
-	wget https://kangle.phxc8.com/source/bugpatch/cron.api.php2 -O /vhs/kangle/nodewww/webftp/framework/api/cron.api.php
-	wget https://kangle.phxc8.com/source/bugpatch/runtime.php2 -O /vhs/kangle/nodewww/webftp/framework/runtime.php
 	/vhs/kangle/bin/kangle
 	if [ $? != 0 ] ; then
        		 exit $?
