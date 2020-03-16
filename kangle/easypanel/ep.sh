@@ -111,7 +111,7 @@ function setup_kangle
 	if [ $? != 0 ] ; then
                  exit $?
         fi
-	make
+	make -j `grep processor /proc/cpuinfo | wc -l`
 	if [ $? != 0 ] ; then
 	         exit $?
 	fi
@@ -291,7 +291,7 @@ function setup_pureftpd
 	tar xzf $WGET_NEW_NAME
 	cd pure-ftpd-$PUREFTP_VERSION
 	./configure --prefix=/vhs/pure-ftpd with --with-extauth --with-throttling --with-peruserlimits
-	make
+	make -j `grep processor /proc/cpuinfo | wc -l`
 	if [ $? != 0 ] ; then 
 		exit $?
 	fi
