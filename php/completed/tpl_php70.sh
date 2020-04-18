@@ -7,8 +7,8 @@ PHP_TMP="/root/php/"
 PHP_banben="tpl_php70"
 mkdir -p $PHP_TMP
 wget -c https://github.phxc8.com/php/completed/$PHP_banben.tar.bz2 -O $PHP_TMP/$PHP_banben.tar.bz2
-tar -jxvf $PHP_TMP/$PHP_banben.tar.bz2
-mv $PHP_TMP/$PHP_banben $PREFIX
+tar -jxvf $PHP_TMP/$PHP_banben.tar.bz2 -C $PREFIX
+
 rm -rf $PHP_TMP
 rm -rf $PREFIX/$PHP_banben/ixed.7.0.lin
 wget -c https://github.phxc8.com/php/sg11-x86_64/ixed.7.0.lin -O $PREFIX/$PHP_banben/ixed.7.0.lin

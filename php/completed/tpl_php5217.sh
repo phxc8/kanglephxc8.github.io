@@ -7,8 +7,8 @@ yum -y install mhash-devel openssl-devel
 yum -y install libtool-ltdl libtool-ltdl-devel
 mkdir -p $PHP_TMP
 wget -c https://github.phxc8.com/php/completed/$PHP_banben.tar.bz2 -O $PHP_TMP/$PHP_banben.tar.bz2
-tar -jxvf $PHP_TMP/$PHP_banben.tar.bz2
-mv $PHP_TMP/$PHP_banben $PREFIX
+tar -jxvf $PHP_TMP/$PHP_banben.tar.bz2 -C $PREFIX
+
 rm -rf $PHP_TMP
 rm -rf $PREFIX/$PHP_banben/ixed.5.2.lin
 wget -c https://github.phxc8.com/php/sg11-x86_64/ixed.5.2.lin -O $PREFIX/$PHP_banben/ixed.5.2.lin
