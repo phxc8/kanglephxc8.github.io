@@ -8,7 +8,7 @@ yum -y install libtool-ltdl libtool-ltdl-devel
 yum -y remove libzip-devel
 mkdir -p $PHP_TMP
 wget -c https://github.phxc8.com/php/source/7.3/libzip-1.3.2.tar.gz -O /root/php/libzip-1.3.2.tar.gz
-tar xvf libzip-1.3.2.tar.gz -C $PHP_TMP
+tar xvf /root/php/libzip-1.3.2.tar.gz -C $PHP_TMP
 cd $PHP_TMP/libzip-1.3.2
 ./configure
 make -j `grep processor /proc/cpuinfo | wc -l`
