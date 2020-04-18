@@ -6,9 +6,8 @@ PREFIX="/vhs/kangle/ext/"
 PHP_TMP="/root/php/"
 PHP_banben="tpl_php71"
 mkdir -p $PHP_TMP
-wget -c https://github.phxc8.com/php/completed/7.1/$PHP_banben.tar.bz2 -O $PHP_TMP/$PHP_banben.tar.bz2
+wget -c https://github.phxc8.com/php/completed/$PHP_banben.tar.bz2 -O $PHP_TMP/$PHP_banben.tar.bz2
 tar -jxvf $PHP_TMP/$PHP_banben.tar.bz2 -C $PREFIX
-
 rm -rf $PHP_TMP
 rm -rf $PREFIX/$PHP_banben/ixed.7.1.lin
 wget -c https://github.phxc8.com/php/sg11-x86_64/ixed.7.1.lin -O $PREFIX/$PHP_banben/ixed.7.1.lin

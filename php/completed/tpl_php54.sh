@@ -6,7 +6,7 @@ yum -y install mhash-devel openssl-devel
 yum -y install libtool-ltdl libtool-ltdl-devel
 PHP_banben="tpl_php54"
 mkdir -p $PHP_TMP
-wget -c https://github.phxc8.com/php/completed/tpl_php53.tar.bz2 -O $PHP_TMP/$PHP_banben.tar.bz2
+wget -c https://github.phxc8.com/php/completed/tpl_php54.tar.bz2 -O $PHP_TMP/$PHP_banben.tar.bz2
 tar -jxvf $PHP_TMP/$PHP_banben.tar.bz2 -C $PREFIX
 
 rm -rf $PHP_TMP
